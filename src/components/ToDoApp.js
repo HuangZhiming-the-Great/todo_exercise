@@ -61,8 +61,8 @@ class ToDoApp extends React.Component{
                         <div className="panel-body">
                             <h1>My To Do App</h1>
                             <hr/>
-                            <Input value={this.state.newToDo} onInputChange={this.onInputChange} onInputSubmit={this.onInputSubmit}/>
-                            <List listItems={this.state.list} onListItemClick={this.onListItemClick} deleteListItem={this.deleteListItem}/>
+                            <Input value={this.props.toDoApp.newToDo} onInputChange={this.props.inputChange} onInputSubmit={this.props.inputSubmit}/>
+                            <List listItems={this.props.toDoApp.list} onListItemClick={this.props.listItemClick} deleteListItem={this.props.deleteListItem}/>
                         </div>
                     </div>
                 </div>
